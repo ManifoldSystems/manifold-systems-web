@@ -2,13 +2,19 @@
 
 Company site for Manifold Systems — systems built around intelligent agents.
 
-Marketing site covering the Manifold Systems portfolio: Kamui (agent ↔ computer), Kumo (human ↔ agent), and Kage (agent ↔ engineering).
+The site presents three open-source Rust projects:
+
+- [Kamui](https://github.com/algonacci/kamui) — a provider-agnostic, repository-aware coding agent for the terminal, with every side effect gated behind your approval.
+- [Kumo](https://github.com/algonacci/kumo) — a minimal personal agent gateway that pairs a private Telegram bot to a single owner and delegates coding work to Kamui.
+- [Kage](https://github.com/algonacci/kage) — an engineering workflow orchestrator that drives coding agents you already have installed through plan, execute, test, and review.
+
+Those three repositories live under their author's account. This GitHub organization holds the website repos (`kamui-web`, `kumo-web`, `kage-web`, `manifold-systems-web`), not the Rust projects themselves.
 
 ## Stack
 
 - React 19 + TypeScript
 - Vite 8
-- Tailwind CSS 4
+- Tailwind CSS 4 — imported for its preflight reset only; the page's own styles are hand-written in `src/styles.css`
 - Deployed on Vercel
 
 ## Development
